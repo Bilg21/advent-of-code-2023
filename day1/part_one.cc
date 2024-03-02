@@ -1,6 +1,8 @@
 module;
 
 #include <algorithm>
+#include <cctype>
+#include <ranges>
 #include <string>
 #include <string_view>
 #include <vector>
@@ -31,4 +33,5 @@ int part1(const std::vector<std::string> &input) {
   }
   return sum;
 }
+
 } // namespace part_one
