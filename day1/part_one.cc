@@ -8,9 +8,9 @@ module;
 export module part_one;
 
 export namespace part_one {
-int part1(std::vector<std::string> &input) {
+int part1(const std::vector<std::string> &input) {
   int sum = 0;
-  for (std::string &s : input) {
+  for (const std::string &s : input) {
     int first = -1, last = -1;
 
     for (int left = 0; left < s.size(); left++) {
